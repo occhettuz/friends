@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS radio buttons</title>
+  <title>CSS Radio Buttons - By Angela Velasquez</title>
+<meta name="description" content="CSS trick to style radio buttons on browsers."><link rel="stylesheet" href="{{ url_for('static', filename='Qstyle.css') }}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+{% block alert %}{% endblock %}
+<div class="container">
+	
+	<h2>{% block title %}{% endblock %}</h2>
+	
+  <ul>
+  <li>
+    <input type="radio" id="f-option" name="selector">
+    <label for="f-option">{% block q1 %}{% endblock %}</label>
+    
+    <div class="check"></div>
+  </li>
+  
+  <li>
+    <input type="radio" id="s-option" name="selector">
+    <label for="s-option">{% block q2 %}{% endblock %}</label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+  
+  <li>
+    <input type="radio" id="t-option" name="selector">
+    <label for="t-option">{% block q3 %}{% endblock %}</label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+    
+  <li>
+    <input type="radio" id="t-option" name="selector">
+    <label for="t-option">{% block q4 %}{% endblock %}</label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+    
+  <li>
+    <input type="radio" id="t-option" name="selector">
+    <label for="t-option">{% block q5 %}{% endblock %}</label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+
+  {% block next %}
+  {% endblock %}
+
+  
+
+</ul>
+</div>
+
+<div class="signature">
+</div>
+<!-- partial -->
+  
+</body>
+</html>

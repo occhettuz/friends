@@ -1,0 +1,25 @@
+{% extends 'login_registerBase.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<form class="login">
+  <div class="segment">
+    <h1>Log in</h1>
+  </div>
+  
+  <label>
+    <input type="text" placeholder="Email Address" value="{{request.form.email}}"/>
+  </label>
+  <label>
+    <input type="password" placeholder="Password" value="{{request.form.password}}"/>
+  </label>
+  {% if error %}
+  <p class="error"><strong>Error:</strong> {{ error }}
+  {% endif %}
+  <label>
+  <button class="red" type="button" onclick="window.location.href= '/Results'"><i class="icon ion-md-lock"></i> Log in </button>
+  </label>
+  <button class="white" type="button" onclick="window.location.href= '/register'"><i class="icon ion-md-lock"></i> Register </button>
+</form>
+{% endblock %}

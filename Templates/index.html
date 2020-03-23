@@ -1,0 +1,24 @@
+{% extends 'HomeBase.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<style>button{
+  min-width: 15rem;
+}</style>
+  <h1>
+    Tosi&Friends
+  </h1>
+  <p>
+    Hey Tosiano prima di iniziare volevamo chiederti se hai letto e accetti le nostre <a href="Privacy">norme sulla privacy</a>
+  </p>
+  <button onclick="window.location.href= '/register'"> 
+    Accetto
+  </button>
+{% endblock %}
+
+{% block login %}
+<button onclick="window.location.href= '/login'"> 
+  Login
+</button>
+{% endblock %}

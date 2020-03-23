@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" madia="all" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+  
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="main">
+    {% block content %}{% endblock %}  
+    {% block login %}{% endblock %}
+    <canvas id="canvas">
+        
+    </canvas>
+  </div>
+</div>
+
+<!-- partial -->
+<script src="{{url_for('static', filename='script.js')}}" data-turbolinks-track="reload"></script>
+
+</body>
+</html>

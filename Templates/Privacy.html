@@ -1,0 +1,25 @@
+{% extends 'HomeBase.html' %}
+
+{% block title %}Privacy{% endblock %}
+
+{% block content %}
+<style>button{
+    min-width: 25rem;
+  }</style>
+  <h2>
+    Privacy
+  </h2>
+  <p>
+    In questo sito verranno raccolti alcuni tuoi dati personali quali nome, cognome, classe, età, indirizzo email. <br>
+    Inoltre ti verranno fatte alcune domande personali affinché l'algoritmo ti connetta con altri studenti. <br>
+    Cliccando Accetto dai il consenso al trattamento dei tuoi dati personali che non verranno assolutamente venduti o diffusi a terze parti. <br>
+    Cliccando Accetto dichiari inoltre, se sei minorenne, di avere il consenso dei genitori. <br>
+    Se hai qualche domanda riguardante la nostra politica sulla privacy sentiti libero di contattarci all'indirizzo email: tosi&friends@gmail.com
+  </p>
+  <button onclick="window.location.href= './'"> 
+    Torna alla home
+  </button>
+{% endblock %}
+
+{% block login %}
+{% endblock %}
